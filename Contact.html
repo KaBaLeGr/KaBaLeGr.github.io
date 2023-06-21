@@ -1,0 +1,142 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #ccc;
+    }
+
+    .main {
+      padding: 40px 20px;
+    }
+
+    .main h1 {
+      color: #333;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .main p {
+      color: #666;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form label {
+      display: block;
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .form input, .form textarea {
+      display: block;
+      width: 100%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+     .form button {
+       background-color:#333; 
+       color:white; 
+       border:none; 
+       padding :15px 30px; 
+       font-size :20px; 
+       cursor:pointer; 
+     } 
+
+     .form button:hover { 
+       background-color:#444; 
+     } 
+
+     .footer {
+       background-color:#333; 
+       color:white; 
+       padding :20px; 
+     } 
+
+     .footer p { 
+       text-align :center; 
+     } 
+
+     cent {text-align: center;}
+
+   </style> 
+ </head> 
+ <body> 
+   <div class="container"> 
+     <div class="header"> 
+       <div class="logo">Valetio</div> 
+       <div class="nav"> 
+         <a href="Home.html">Home</a> 
+         <a href="About.html">About</a> 
+         <a href="Plans.html">Plans</a> 
+       </div> 
+     </div> 
+     <div class="main"> 
+       <h1>Contact us</h1> 
+       <cent><p>If you have any questions or feedback about our service,</p></cent>
+       <cent><p>please feel free to contact us using the form below.</p></cent>
+       <cent><p>We'll get back to you as soon as possible.</p></cent>
+       <div class="form">
+         <form id="contact-form" method="post" action="send.php">
+           <label for="name">Name</label>
+           <input type="text" id="name" name="name" required>
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email" required>
+           <label for="subject">Subject</label>
+           <input type="text" id="subject" name="subject" required>
+           <label for="message">Message</label>
+           <textarea id="message" name="message" rows="10" required></textarea>
+           <button type="submit">Send</button>
+         </form>
+       </div>
+       <cent><p>(As of now, this feature isn't functional yet. If you want to contact us to arrange a wash for your car or for any queries, try emailing example@gmail.com or calling +44 0423 392032)</p></cent>
+     </div> 
+     <div class="footer"> 
+       <p>&copy; 2023 Valetio. All rights reserved.</p> 
+     </div> 
+   </div> 
+ </body>
+</html>

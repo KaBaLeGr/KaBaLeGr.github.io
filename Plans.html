@@ -1,0 +1,175 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #ccc;
+    }
+
+    .main {
+      padding: 40px 20px;
+    }
+
+    .main h1 {
+      color: #333;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .main p {
+      color: #666;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .plans {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .plan {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .plan h2 {
+      color: #333;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .plan ul {
+      list-style-type: none;
+    }
+
+    .plan li {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .plan li::before {
+       content:"\2713";
+       color:green; 
+       margin-right :10px; 
+       font-weight:bold; 
+       font-size :20px; 
+       vertical-align :middle; 
+     } 
+
+     .plan img {
+       display:block; 
+       width :100%; 
+       height:auto; 
+       margin-bottom :20px; 
+     } 
+
+     .plan button {
+       background-color:#333; 
+       color:white; 
+       border:none; 
+       padding :15px 30px; 
+       font-size :20px; 
+       cursor:pointer; 
+     } 
+
+     .plan button:hover { 
+       background-color:#444; 
+     } 
+
+     .footer {
+       background-color:#333; 
+       color:white; 
+       padding :20px; 
+     } 
+
+     .footer p { 
+       text-align :center; 
+     } 
+
+     cent {text-align: center;}
+
+   </style> 
+ </head> 
+ <body> 
+   <div class="container"> 
+     <div class="header"> 
+       <div class="logo">Valetio</div> 
+       <div class="nav"> 
+         <a href="Home.html">Home</a> 
+         <a href="About.html">About</a> 
+         <a href="Contact.html">Contact</a> 
+       </div> 
+     </div> 
+     <div class="main"> 
+       <h1>Choose your plan</h1> 
+       <p>Valetio offers two monthly subscription plans that suit your needs and budget. Both plans include unlimited car washes and valets at any time and place. You can cancel or change your plan anytime, no questions asked.</p>
+       <cent><div class="plans"></cent>
+         <div class="plan">
+           <h2>Standard Plan</h2>
+           <img src="exterior.png" alt="Exterior clean">
+           <ul>
+             <li>Full clean of the exterior</li>
+             <li>Rinse and dry</li>
+             <li>Tyre and wheel shine</li>
+           </ul>
+           <p><strong>£30 per month</strong></p>
+           <button onclick="window.location.href='https://buy.stripe.com/aEU3fs2lD5Qm86IaEE'">Select plan</button>
+         </div>
+         <div class="plan">
+           <h2>Premium Plan</h2>
+           <img src="interior.png" alt="Interior clean">
+           <ul>
+             <li>Full clean of the exterior</li>
+             <li>Rinse and dry</li>
+             <li>Tyre and wheel shine</li>
+             <li>Cleaning of the interior</li>
+             <li>Vacuuming of the floor and seats</li>
+             <li>Dash, door and seat shine</li>
+           </ul>
+           <p><strong>£45 per month</strong></p>
+           <button onclick="window.location.href='https://buy.stripe.com/28o4jwgct2Ea5YAeUV'">Select plan</button>
+         </div>
+       </div>
+     </div> 
+     <div class="footer"> 
+       <p>&copy; 2023 Valetio. All rights reserved.</p> 
+     </div> 
+   </div> 
+ </body>
+</html>
