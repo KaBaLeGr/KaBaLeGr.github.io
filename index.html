@@ -1,0 +1,171 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #ccc;
+    }
+
+    .banner {
+      background-image: url("Home.png");
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .banner p {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .banner button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .banner button:hover {
+      background-color: #444;
+    }
+
+    .main {
+      display: flex;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .main .col {
+      flex-basis: 33%;
+    }
+
+    .main h2 {
+      color: #333;
+      font-size: 30px;
+    }
+
+    .main p {
+      color: #666;
+      font-size: 18px;
+    }
+
+    .main ul {
+      list-style-type: none;
+    }
+
+    .main li {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .main li::before {
+       content:"\2713";
+       color:green; 
+       margin-right :10px; 
+       font-weight:bold; 
+       font-size :20px; 
+       vertical-align :middle; 
+     } 
+
+     .footer {
+       background-color:#333; 
+       color:white; 
+       padding :20px; 
+     } 
+
+     .footer p { 
+       text-align :center; 
+     } 
+
+   </style> 
+ </head> 
+ <body> 
+   <div class="container"> 
+     <div class="header"> 
+       <div class="logo">Valetio</div> 
+       <div class="nav"> 
+         <a href="About.html">About</a> 
+         <a href="Plans.html">Plans</a> 
+         <a href="Contact.html">Contact</a> 
+       </div> 
+     </div> 
+     <div class="banner"> 
+       <div class="content"> 
+         <h1>Valetio - The mobile car cleaning service</h1> 
+         <p>We come to your house and clean your car on request</p> 
+         <button onclick="window.location.href='Plans.html'">Get started</button> 
+       </div> 
+     </div> 
+     <div class="main"> 
+       <div class="col"> 
+         <h2>Why choose Valetio?</h2> 
+         <p>Valetio is the most convenient and affordable way to keep your car sparkling clean. With our monthly subscription, you can request a car wash or valet anytime, anywhere. No need to drive to a car wash or wait in line. Just book through phone or email and we'll come to you.</p> 
+       </div> 
+       <div class="col"> 
+         <h2>How it works?</h2> 
+         <p>It's easy. Just sign up for a plan that suits your needs and budget. You can choose a convenient date and time for your car wash or valet, and provide your address and car details by phone or email. We'll confirm your booking and send you a confirmation email if you're subscribed. On the day of the service, we'll arrive at your location with our mobile car wash equipment and supplies, and clean your car to your satisfaction.</p> 
+       </div> 
+       <div class="col"> 
+         <h2>What we offer?</h2> 
+         <ul> 
+           <li>Unlimited car washes and valets</li> 
+           <li>Professional and friendly staff</li> 
+           <li>High-quality products and equipment</li> 
+           <li>Eco-friendly and water-saving methods</li> 
+           <li>Satisfaction guaranteed</li> 
+         </ul> 
+       </div> 
+     </div> 
+     <div class="footer"> 
+       <p>&copy; 2023 Valetio. All rights reserved.</p> 
+     </div> 
+   </div> 
+ </body>
+</html>
